@@ -1,0 +1,98 @@
+/* すべてのページに適用される設定*/
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    line-height: 1.15;
+}
+*, ::before, ::after {
+    border-style: solid;
+        border-top-style: solid;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-left-style: solid;
+    border-width: 0;
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-bottom-width: 0px;
+        border-left-width: 0px;
+    box-sizing: border-box;
+}
+html[Attributes Style] {
+    -webkit-locale: "ja";
+}
+html {
+    display: block;
+}
+*, ::before, ::after {
+    border-style: solid;
+        border-top-style: solid;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-left-style: solid;
+    border-width: 0;
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-bottom-width: 0px;
+        border-left-width: 0px;
+    box-sizing: border-box;
+}
+*, ::before, ::after {
+    border-style: solid;
+        border-top-style: solid;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-left-style: solid;
+    border-width: 0;
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-bottom-width: 0px;
+        border-left-width: 0px;
+    box-sizing: border-box;
+}
+
+/*p,li {
+    line-height: 1,7;
+}
+a:link {
+    color: #666666;
+    text-decoration: none;
+}
+a:visited {
+    color: #666666;
+    text-decoration: none;
+}
+a:visited {
+    color: #666666;
+    text-decoration: none;
+}
+a:hover {
+    color: #666666;
+    text-decoration: none;
+}
+a:active {
+    color: #666666;
+    text-decoration: none;
+}
+
+/* すべてのページに適用 - ヘッダー */
+
+/* すべてのページに適用 - ヒーロ - */
+
+/* すべてのページに適用 - メイン - */
+
+main h1 {
+    color: black;
+}
+main h2 {
+    color: black;
+}
+main h3 {
+    color: blue;
+}
+main h4 {
+    color: aliceblue;
+}
+/* すべてのページに適用 - フッター */
+
+/* 個別のスタイル */
+/* top.html */
