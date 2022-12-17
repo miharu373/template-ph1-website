@@ -19,7 +19,7 @@ html {
     align-items: center;
     background-color: #fff;
     display: flex;
-    padding: 15px 10px;
+    padding: 15px 24px;
 }
 .l-header {
     left: 0;
@@ -43,7 +43,9 @@ html {
 }
 .p-header__nav__item__link {
     color: #666;
+    font-size: 14px;
     text-decoration: none; 
+    letter-spacing: 0.1em;
 }
 li {
     display: list-item;
@@ -56,6 +58,11 @@ ul,ol {
     margin-right: auto;
     text-decoration: none;
     
+}
+.p-header__logo {
+    position: relative;
+    width: 120px;
+    z-index: 100;
 }
 .p-header__nav__item {
     list-style: none;
@@ -123,6 +130,9 @@ ul,ol {
     text-align: center;
     width: 100%;
 }
+.l-main {
+    padding-top: 80px;
+}
 body {
     padding: wight;
     color: #000;
@@ -181,19 +191,34 @@ div.-line__body::before {
 .p-top-hero__body {
     align-self: center;
     background-color: #eff2f5;
+    border-radius: 20px;
     display: inline-block;
+    padding: 50px 50px 40px 50px;
     position: relative;
     white-space: nowrap;
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
-.p-top-hero__body__title {
+
+.p-top-hero__body__titel {
     color: #0071bc;
     font-size: 16px;
     font-weight: bold;
     line-height: 1.8;
 }
+.p-top-hero__body__catchcopy {
+    font-size: 60px;
+    letter-spacing: 0.05em;
+    line-height: 1.3333;
+    margin-top: 10px;
+}
+.p-top-hero__body__catchcopy {
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
 .p-top-hero__body__catchcopy {
     font-size: 60px;
     letter-spacing: 0.05em;
@@ -222,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
 .p-top-hero__inner {
     display: flex;
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: 1480px;
     position: relative;
 }
 .p-top-hero__image img {
@@ -233,6 +258,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: %;
     margin-right: -100%;
     max height : 680px;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
 }
 .p-top-hero__image {
     border-radius: 80px 0 0 80px;
@@ -317,6 +346,7 @@ svg, img, embed, object, iframe {
 /*すべてのページに適用 - メイン */
 .p-line {
     margin-top: 144px;
+    margin-bottom: 100px;
 }
 .l-container {
     padding: 0 24px;
@@ -334,7 +364,11 @@ svg, img, embed, object, iframe {
 .p-line__body__inner {
     position: relative;
 }
-
+.p-line__content {
+    color: #eee;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
 
 
 
@@ -453,9 +487,11 @@ p {
     text-decoration: none;
     border-radius: 16px;
     box-shadow: 4px 4px 20px rgb(0 0 0 / 15%);
-    padding: 22px 20px 22px 24px;
+    padding: 8px 20px 8px 24px;
+    font-size: 14px;
     /*position: fixed;*/
 }
+
 a {
     background-color: transparent;
     color: inherit;
@@ -470,13 +506,22 @@ a {
     line-height: 1.3;
     text-decoration: none;
     margin-left: 13px;
+    text-align: left;
 }
-
+.u-icon__link::before {
+    content: url(../img/icon/icon-link-gray-dark.svg);
+}
 .p-fixedLine__link .u-icon__link {
     margin-left: 35px;
     font-size: 36px;
     color: #fff;
     font-size: 18px;
+}
+.p-line__button .u-icon__link {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 i, .icomoon-liga {
     font-feature-settings: "liga";
@@ -497,14 +542,18 @@ i, .icomoon-liga {
     text-align: center;
     
 }
-
+.l-footer__inner {
+    padding: 56px 24px 48px;
+}
 .p-footer__logo img {
     width: 12%;
 }
 img {
     max-width: 100%;
 }
-
+.p-footer__siteinfo__link {
+    
+}
 li.p-sns__item {
     /*display: flex;*/
     
