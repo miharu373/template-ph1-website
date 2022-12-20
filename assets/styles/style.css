@@ -341,7 +341,9 @@ img {
 svg, img, embed, object, iframe {
     vertical-align: bottom;
 }
-
+.p-top-about__content {
+    text-align: left;
+}
 
 /*すべてのページに適用 - メイン */
 .p-line {
@@ -408,6 +410,10 @@ svg, img, embed, object, iframe {
     border-radius: 16px;
     overflow: hidden;
 }
+.p-top-about__content {
+    text-align: left;
+    letter-spacing: ;
+}
 /*h1, h2, h3, h4, h5, h6 {
     font-size: inherit;
     font-weight: inherit;
@@ -433,7 +439,7 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    text-align: center;
+    
 }
 .p-line__button {
     background-color: #fff;
@@ -507,6 +513,9 @@ a {
     text-decoration: none;
     margin-left: 13px;
     text-align: left;
+}
+.p-line__content {
+    text-align: center;
 }
 .u-icon__link::before {
     content: url(../img/icon/icon-link-gray-dark.svg);
