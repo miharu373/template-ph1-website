@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ITクイズ | POSSE 初めてのWeb制作</title>
         <!--スタイルシート読み込み-->
@@ -14,11 +14,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.co" crossorigin>
         <link href="https://fonts.googleapis.com/css2?familly=Noto+Sans+JP:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap"
         rel="stylesheet">
-        <script src="" before></script>
+        <!-- <script src="../template-ph1-website/js/common.js" defer></script> -->
+        <script src="../template-ph1-website/js/script.js" defer></script>
     </head>
 
     <body>
-        <header id="" class="l-header p-header"> 
+        <header id="js-header" class="l-header p-header"> 
             <div class="p-header__logo"><img src="assets/img/logo.svg" alt="POSSE"></div>
             <button class="p-header__button" id="js-headerButton"></button>
             <div class="p-header__inner">
@@ -30,6 +31,7 @@
                     <li class="p-header__nav__item">
                         <a href="./kuizu.html" class="p-header__nav__item__link">クイズ</a>
                     </li>
+
                     <li class="p-header_nav_item header_icon">
                         <a href="https://twitter.com/posse_program" target="_blank" rel="noopener noreferrer" class="p-sns__tem__link"
                         aria-label="twitter"><span class="icomoon.ttf"></span>
@@ -55,10 +57,11 @@
             </div>
         </section>
             <div class="p-quiz-container l-container">
-                <section class="p-quiz-box__question">
+                <section class="p-quiz-box js-quiz" data-quiz="0">
+                    <div class="p-quiz-box__question">
                     <h2 class="p-quiz-box__question__title">
                         <span class="p-quiz-box__label">Q1</span>
-                        <span class="p-quiz-bpx__question__title__text">日本のIT人材が2030年には最大どれくらい不足すると言われているでしょうか？</span>
+                        <span class="p-quiz-box__question__title__text">日本のIT人材が2030年には最大どれくらい不足すると言われているでしょうか？</span>
                     </h2>
                     <figure class="p-quiz-box__question__image">
                         <img src="assets/img/quiz/img-quiz01.png" alt="">
@@ -66,31 +69,33 @@
                 </div>
                 <div class="p-quiz-box__answer">
                     <span class="p-quiz-box__label p-quiz-box__label--accent">A</span>
-                    <ul class="p-quiz-box__answe__list">
+                    <ul class="p-quiz-box__answer__list">
                         <li class="p-quiz-box__answer__item">
-                            <button class="p-quiz-box__answer__button js-answer" data-answer="0">約28万人<i class="u-icon__arrow"></i></button>
+                            <button class="p-quiz-box__answer__button js-answer" data-answer="0" disabled>約28万人<i class="u-icon__arrow"></i></button>
                         </li>
                         <li class="p-quiz-box__answer__item">
-                            <button class="p-quiz-box__answer__button js-answer" data-answer="1">約79万人<i class="u-icon__arrow"></i></button>
+                            <button class="p-quiz-box__answer__button js-answer" data-answer="1" disabled>約79万人<i class="u-icon__arrow"></i></button>
                         </li>
                         <li class="p-quiz-box__answer__item">
-                            <button class="p-quiz-box__answer__button js-answer" data-answer="2">約183万人<i class="u-icon__arrow"></i></button>
+                            <button class="p-quiz-box__answer__button js-answer" data-answer="2" disabled>約183万人<i class="u-icon__arrow"></i></button>
                         </li>
                     </ul>
-                <div class="p-quiz-box__answe__correct js-answeBox">
+                <div class="p-quiz-box__answe__correct js-answerBox">
+                    <p class="p-quiz-box__answer__correct__title js-answerTitle"></p>
                     <p class="p-quiz-box__answer__correct__content">
-                        <span class="p-quiz-box__answer__correct__content__label">A</span>
+                        <span class="p-quiz-box__answer__correct__content__label"></span>
                         <span class="js-answerText"></span>
                     </p>
                 </div>
                 </div>
+            </div>
                 <cite class="p-quiz-box__note"><i class="u-icon__note"></i>経済産業省 2019年3月 - IT 人材需給に関する調査</cite>
         </section>
         <section class="p-quiz-box js-quiz" data-quiz="1">
             <div class="p-quiz-box__question">
                 <h2 class="p-quiz-box___question__title">
                     <span class="p-quiz-box__label">02</span>
-                    <span class="p-quiz-box__question__title_text">既存業界のビジネスと、先進的なテクノロジーを結びつけて生まれた、新しいビジネスのことをなんと言うでしょう？</span>
+                    <span class="p-quiz-box__question__title__text">既存業界のビジネスと、先進的なテクノロジーを結びつけて生まれた、新しいビジネスのことをなんと言うでしょう？</span>
                 </h2>
                 <figure class="p-quiz-box__question__image">
                     <img src="assets/img/quiz/img-quiz02.png" alt="">
@@ -154,7 +159,7 @@
             <div class="p-quiz-box__question">
                 <h2 class="p-quiz-box__question__title">
                     <span class="p-quiz-box__label">04</span>
-                    <span class="p-quiz-box__question__title__text"イギリスのコンピューター科学者であるギャビン・ウッド氏が提唱した、ブロックチェーン技術を活用した「次世代分散型インターネット」のことをなんと言うでしょう？></span>
+                    <span class="p-quiz-box__question__title__text">イギリスのコンピューター科学者であるギャビン・ウッド氏が提唱した、ブロックチェーン技術を活用した「次世代分散型インターネット」のことをなんと言うでしょう？></span>
                 </h2>
                 <figure class="p-quiz-box__question__image">
                     <img src="assets/img/quiz/img-quiz04.png" alt="">
@@ -186,7 +191,7 @@
                 Society5.0 - 科学技術政策 - 内閣府
             </cite>
         </section>
-        <section class="p-quiz-box" js-quiz="4">
+        <section class="p-quiz-box js-quiz" data-quiz="4">
             <div class="p^quiz-bpx__question">
                 <h2 class="p-quiz-box__question__title">
                     <span class="p-quiz-box__label">Q5</span>
@@ -325,7 +330,7 @@
                     </a>
                 </li>
                 <li class="p-sns__item">
-                    <a href="https://twitter.com/posse_program" target="_blank" rel="noopener noreferrer" class="p-sns__item__link" 
+                    <a href="https://twitter.com/posse_program" target="_blank" rel="noopener noreferrer" class="" 
                     aria-label="instagram"><span class="icomoon.ttf"></span>
                         <span class="icon-instagram"></span>
                 </li>
@@ -336,5 +341,6 @@
                     <small lang="en">©️2022 POSSE</small>
                 </div>
             </footer>
+            <script src="js/script.js"></script>
     </body>
 </html>
