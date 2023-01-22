@@ -1591,3 +1591,20 @@ body {
     display: none;
   }
 }
+
+.p-quiz-box__note {
+    margin: 0 auto;
+    max-width: 1032px;
+}
+.p-quiz-box__question {
+    margin: 0 auto;
+    max-width: 1032px;
+}
+.p-quiz-box__answer{
+    margin: 0 auto;
+    max-width: 1032px;
+}
+.p-quiz-bpx__question{
+    margin: 0 auto;
+    max-width: 1032px;
+}
