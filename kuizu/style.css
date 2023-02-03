@@ -1663,7 +1663,7 @@ utton, input, optgroup, select, textarea {
     height:50px;
   cursor: pointer;
   background:#fff;
-  /*z-index: 9899;*/
+  z-index: 9899;
 }
   
 /*ボタン内側*/

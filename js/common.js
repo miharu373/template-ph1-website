@@ -2,12 +2,12 @@
 
 {
   const Header = document.getElementById('js-header');
-  const HeaderButton = document.getElementById('js-headerButton');
+  const HeaderButton = document.getElementById('button2');
 
   HeaderButton.addEventListener('click', () => {
     Header.classList.toggle('is-open')
   })
 }
 $(".openbtn2").click(function () {
-  $(this).toggleClass('is-open');
+  $(this).toggleClass('active');
 });
