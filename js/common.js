@@ -8,3 +8,6 @@
     Header.classList.toggle('is-open')
   })
 }
+$(".openbtn2").click(function () {
+  $(this).toggleClass('is-open');
+});

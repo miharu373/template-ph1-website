@@ -245,7 +245,7 @@ button, [type=button], [type=reset], [type=submit] {
     cursor: pointer;
 }
 @media screen and (min-width: 768px)
-.p-quiz-box__note {
+.p-quiz-box__note  {
     font-size: 18px;
 }
 .p-quiz-box__note {
@@ -1222,9 +1222,9 @@ body {
   line-height: 1.8;
 }
 
-.p-quiz-hero {
+/*.p-quiz-hero {
   background: url(../img/quiz/sp/bg-hero.jpg) center center/cover;
-}
+}*/
 
 .p-quiz-container {
   margin-top: 48px;
@@ -1548,9 +1548,9 @@ body {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 42px;
   }
-  .p-quiz-hero {
+  /*.p-quiz-hero {
     background-image: url(../assets/img/quiz/bg-hero.jpg);
-  }
+  }*/
   .p-quiz-container {
     margin-top: 120px;
   }
@@ -1608,3 +1608,120 @@ body {
     margin: 0 auto;
     max-width: 1032px;
 }
+
+.p-header__official__link--line {
+  background-color: #5FDF5B;
+  border-radius: 5em;
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 16px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+button, [type=button], [type=reset], [type=submit] {
+  cursor: pointer;
+}
+.p-header.is-open .p-header__button::before {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.p-header__button::before, .p-header__button::after {
+  background-color: #333;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  transition: transform 0.4s, top 0.4s;
+  width: 34px;
+}
+utton, input, optgroup, select, textarea {
+  appearance: none;
+  background: transparent;
+  border-radius: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  vertical-align: middle;
+}
+@charset "utf-8";
+/*==================================================
+　5-2-2 2本線が×に
+===================================*/
+
+/*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+.openbtn2{
+  position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+  width: 50px;
+    height:50px;
+  cursor: pointer;
+  background:#fff;
+  /*z-index: 9899;*/
+}
+  
+/*ボタン内側*/
+
+.openbtn2 span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: 353px;
+    height: 2px;
+  background-color: #666;
+  }
+
+
+.openbtn2 span:nth-of-type(1) {
+  top:22px; 
+    width: 50%;
+}
+
+.openbtn2 span:nth-of-type(2) {
+  top:29px;
+    width:30%;
+}
+
+/*activeクラスが付与されると線が回転して×に*/
+
+.openbtn2.active span:nth-of-type(1) {
+    top: 20px;
+    left: 16px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 35%;
+}
+
+.openbtn2.active span:nth-of-type(2) {
+    top: 32px;
+    left: 16px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 35%;
+}
+/*========= レイアウトのためのCSS ===============*/
+
+
+
+a{
+  color: #333;
+  text-decoration: none;
+}
+
+.lead{
+  margin:20px 0 0 0;
+}
+
+.btn-block{
+  width:200px;  
+  padding: 30px;
+}
+
+
+
+
+
