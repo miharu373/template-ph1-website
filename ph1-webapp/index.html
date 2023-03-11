@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ph1 Webapp</title>
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <script src="./assets/scripts/script.js" defer></script>
+  <script src="./assets/scripts/commm.js" defer></script>
+
+</head>
+
+<body>
+  <header id="js-header" class="l-header p-header">
+    <div class="p-header__logo"><img src="./assets/imgs/posse.png" alt="POSSE"></div>
+    <div class="p-header_moji">4th week</div>
+    <button class="p-header__button" id="js-headerButton"></button>
+    <div class="p-header__inner">
+      <nav class="p-header__nav">
+        <ul class="p-header__nav__list">
+          <li class="p-header__nav__item">
+            <!-- <a href="" class="p-header__nav__item__link">記録・投稿</a> -->
+            <div class="modal-back">
+              <div class="modal modal001">
+                <p class="modal__text1">学習日</p>
+                <input type="date" id="inp3" style="width:0px; border-width:0px;">
+<button type="button" id="btn3">日付を選択してください</button>
+<output id="out3" for="inp3" value=""></output>
+                <script src="./assets/scripts/event.js"></script>
+
+                <p class="modal__text2">学習時間</p>
+                <p class="modal__text3">学習コンテンツ(複数選択可)</p>
+                <p class="modal__text4">Twitter用コメント</p>
+                <p class="modal__text5">学習言語(複数選択可)</p>
+              </div>
+              
+              <div class="close">
+                <div class="close__line close__line001"></div>
+                <div class="close__line close__line002"></div>
+              </div>
+            </div>
+          
+            <section class="sec-blue">
+              <div class="btn btn001">
+                <a href="#" class="btn__link">
+                  <span class="btn__text">記録・投稿</span>
+                </a>
+              </div>
+            </section>
+            <script src="./assets/scripts/script.js"></script>
+          </li>
+        </ul>
+      </nav>
+  </header>
+  <main class="container">
+    <div class="box-wrapper1">
+      <ul class="box1">
+        <li class="box-item">
+          <p class="title">Today </p>
+          <p class="number">3</p>
+          <p class="time">hour</p>
+        </li>
+      
+        <li class="box-item">
+          <p class="title">Month</p>
+          <p class="number">120</p>
+          <p class="time">hour</p>
+        </li>
+        <li class="box-item">
+          <p class="title">Total</p>
+          <p class="number">1348</p>
+          <p class="time">hour</p>
+        </li>
+      </ul>
+      <div class="box2">
+        <div class="graph" id="bar-graph">
+          
+              </div>
+      </section>
+      <script src="https://unpkg.com/apexcharts/dist/apexcharts.min.js" defer></script>
+        <script src="./assets/scripts/chart.js" defer></script>
+      </div>
+    </div>
+    <div class="box-wrapper2">
+      <div class="box3">学習言語</div>
+      <div class="box3">学習コンテンツ</div>
+    </div>
+  </main>
+</body>
+  <!-- <main class="l-main">
+    <div class="container"> 
+      アイテム
+       <div class="itemA">itemA</div>
+      <div class="itemB">itemB</div>
+      <div class="itemC">itemC</div>
+      <div class="itemD">itemD</div>
+      <div class="itemE">itemE</div>
+      <div class="itemF">itemF</div>
+      <div class="itemG">itemG</div>
+      <div class="itemH">itemH</div>
+      <div class="itemI">itemI</div>
+      <div class="itemJ">itemJ</div>
+    </div>
+
+  </main> --> 
+
+  <footer class="l-footer p-footer">
+    
+  </footer>
+</body>
+</html>
