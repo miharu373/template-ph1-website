@@ -13,6 +13,10 @@
     rel="stylesheet">
   <script src="./assets/scripts/script.js" defer></script>
   <script src="./assets/scripts/commm.js" defer></script>
+  <script src="https://unpkg.com/apexcharts/dist/apexcharts.min.js" defer></script>
+        <script src="./assets/scripts/chart.js" defer></script>
+        <script src="./assets/scripts/event.js"defer></script>
+        <script src="./assets/scripts/script.js" defer></script>
 
 </head>
 
@@ -28,16 +32,45 @@
             <!-- <a href="" class="p-header__nav__item__link">記録・投稿</a> -->
             <div class="modal-back">
               <div class="modal modal001">
-                <p class="modal__text1">学習日</p>
-                <input type="date" id="inp3" style="width:0px; border-width:0px;">
-<button type="button" id="btn3">日付を選択してください</button>
+                <div class="yoko">
+                <p class="modal__text1">学習日</p><p class="tht">学習時間</p></div>
+                <div class="cp_iptxt2">
+                  <label class="ef">
+                  <input type="text2" placeholder="">
+                  </label>
+                </div>
+                <div class="cp_iptxt">
+                  <label class="ef">
+                  <div>
+                  <!-- <input type="text" placeholder=""> -->
+                  <input type="date" id="inp3" style="width:0px; border-width:0px;">
+<button type="button" id="btn3" class="date"></button>
 <output id="out3" for="inp3" value=""></output>
-                <script src="./assets/scripts/event.js"></script>
+                  </div>
+                  </label>
+                
+                
+</div>
 
-                <p class="modal__text2">学習時間</p>
+                
+                <div class="two">
                 <p class="modal__text3">学習コンテンツ(複数選択可)</p>
+                <div class="boxA"><label class="ECM_CheckboxInput1"><input class="ECM_CheckboxInput-Input" type="checkbox"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText">N予備校</span></label></div>
+                <div class="boxB"><label class="ECM_CheckboxInput2"><input class="ECM_CheckboxInput-Input" type="checkbox"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText">ドットインストール</span></label>
+                </div>
+                <div class="boxC"><label class="ECM_CheckboxInput3"><input class="ECM_CheckboxInput-Input" type="checkbox"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText">POSSE課題</span></label></div>
                 <p class="modal__text4">Twitter用コメント</p>
+              </div>
                 <p class="modal__text5">学習言語(複数選択可)</p>
+                
+                <div class="boxD"><label class="ECM_CheckboxInput1"><input class="ECM_CheckboxInput-Input" type="checkbox"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText">HTML</span></label></div>
+                <div class="boxE"><label class="ECM_CheckboxInput1"><input class="ECM_CheckboxInput-Input" type="checkbox"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText">CSS</span></label></div>
+                <div class="boxF"><label class="ECM_CheckboxInput1"><input class="ECM_CheckboxInput-Input" type="checkbox"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText">JavaScript</span></label></div>
+                <div class="boxG"><label class="ECM_CheckboxInput1"><input class="ECM_CheckboxInput-Input" type="checkbox"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText">PHP</span></label></div>
+                <div class="boxH"><label class="ECM_CheckboxInput1"><input class="ECM_CheckboxInput-Input" type="checkbox"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText">Laravel</span></label></div>
+                <div class="boxI"><label class="ECM_CheckboxInput1"><input class="ECM_CheckboxInput-Input" type="checkbox"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText">SQL</span></label></div>
+                <div class="boxJ"><label class="ECM_CheckboxInput1"><input class="ECM_CheckboxInput-Input" type="checkbox"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText">SHELL</span></label></div>
+                <div class="boxK"><label class="ECM_CheckboxInput2"><input class="ECM_CheckboxInput-Input" type="checkbox"><span class="ECM_CheckboxInput-DummyInput"></span><span class="ECM_CheckboxInput-LabelText">情報システム基礎知識</span></label></div>
               </div>
               
               <div class="close">
@@ -53,7 +86,7 @@
                 </a>
               </div>
             </section>
-            <script src="./assets/scripts/script.js"></script>
+            
           </li>
         </ul>
       </nav>
@@ -62,20 +95,20 @@
     <div class="box-wrapper1">
       <ul class="box1">
         <li class="box-item">
-          <p class="title">Today </p>
-          <p class="number">3</p>
-          <p class="time">hour</p>
+          <h2 class="title">Today </h2>
+          <h1 class="number">3</h1>
+          <h3 class="time">hour</h3>
         </li>
       
         <li class="box-item">
-          <p class="title">Month</p>
-          <p class="number">120</p>
-          <p class="time">hour</p>
+          <h2 class="title">Month</h2>
+          <h1 class="number">120</h1>
+          <h3 class="time">hour</h3>
         </li>
         <li class="box-item">
-          <p class="title">Total</p>
-          <p class="number">1348</p>
-          <p class="time">hour</p>
+          <h2 class="title">Total</h2>
+          <h1 class="number">1348</h1>
+          <h3 class="time">hour</h3>
         </li>
       </ul>
       <div class="box2">
@@ -83,13 +116,42 @@
           
               </div>
       </section>
-      <script src="https://unpkg.com/apexcharts/dist/apexcharts.min.js" defer></script>
-        <script src="./assets/scripts/chart.js" defer></script>
+      
       </div>
     </div>
     <div class="box-wrapper2">
-      <div class="box3">学習言語</div>
-      <div class="box3">学習コンテンツ</div>
+      <div class="box3">
+        <p class="language">学習言語</p>
+        <div class="pie">
+          <p class="no1">42%</p>
+          <p class="no2">18%</p>
+          <p class="no3">10%</p>
+        </div>
+        
+        <div class="attention">
+        <p class="java">JavaScript</p>
+        <p class="css">CSS</p>
+        <p class="php">PHP</p>
+        <p class="html">HTML</p>
+        <p class="la">Laravel</p>
+        <p class="sql">SQl</p>
+        <p class="shell">SHELL</p>
+        <p class="anther">情報システム基礎知識(その他)</p>
+      </div>
+      </div>
+      <div class="box3">
+        <p class="study">学習コンテンツ</p>
+        <div class="pie2">
+          <p class="no4">42%</p>
+          <p class="no5">33%</p>
+          <p class="no6">25%</p>
+        </div>
+        <div class="attention">
+          <p class="in">ドットインストール</p>
+          <p class="nk">N予備校</p>
+          <p class="ps">POSSE課題</p>
+        </div>
+      </div>
     </div>
   </main>
 </body>
@@ -111,7 +173,9 @@
   </main> --> 
 
   <footer class="l-footer p-footer">
-    
+    <div class="p-footer__copyright">
+      <p class="month">2020年10月</p>
+    </div>
   </footer>
 </body>
 </html>

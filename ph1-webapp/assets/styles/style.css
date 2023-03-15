@@ -21,7 +21,7 @@ main {
   display: block;
 }
 
-p,
+
 table,
 blockquote,
 address,
@@ -33,16 +33,7 @@ dl {
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
-  margin: 0;
-}
+
 
 ul,
 ol {
@@ -129,7 +120,7 @@ iframe {
   vertical-align: bottom;
 }
 
-button,
+
 input,
 optgroup,
 select,
@@ -284,7 +275,8 @@ body {
   align-items: center;
   background-color: #fff;
   display: flex;
-  padding:  20px;
+  padding:  30px;
+  padding-bottom: 30px;
   height: 64px;
 }
 .p-header__logo {
@@ -298,14 +290,14 @@ body {
   color: #ABC5D9;
 }
 
-.p-header__button {
+/* .p-header__button {
   height: 40px;
   position: fixed;
   right: 19px;
   top: 8px;
   width: 40px;
   z-index: 1000;
-}
+} */
 
 .p-header__inner {
   display: flex;
@@ -345,11 +337,13 @@ body {
   padding-top: 100px;
   grid-template-columns: 800px 600px 600px 600px;/*これを追記した　grid-template-columnsを使えば列トラックの幅と、表示させる数を指定*/
   margin-left: 150px;
+  
 }
 
 .box-wrapper1 {
   display: grid;
   gap: 20px;
+  border-radius: 20px;
 }
 
 .box1 {
@@ -359,19 +353,20 @@ body {
   height: 150px;
   padding: 0;
   margin: 0;
+  
 }
 
 .box-item {
   background-color: #ffffff;
   list-style: none;
   text-align: center;
-  
-
+  border-radius: 20px;
 }
 
 .box2 {
   background-color: #ffffff;
   height: 500px;
+  border-radius: 20px;
 }
 
 .box-wrapper2 {
@@ -383,7 +378,7 @@ body {
 
 .box3 {
   background-color: #ffffff;
-  
+  border-radius: 20px;
 }
 
 /* モーダル */
@@ -430,7 +425,7 @@ body {
 .modal {
   background-color: #fff;
   /* padding: 900px; */
-  padding: 200px 300px;
+  padding: 00px 00px;
   /* border-radius: 10px; */
   /* border: 4px solid rgb(89, 165, 246); */
   position: absolute;
@@ -446,7 +441,11 @@ body {
   opacity: 0;
   visibility: hidden;
   border-radius: 30px 30px 30px 30px;
-  padding: 250px 300px 250px 300px;
+  /* padding: 250px 300px 250px 300px; */
+  
+  width: 80%;
+  height: 60%;
+  margin-left: 15px;
 }
 /* クローズボタン */
 .close {
@@ -591,14 +590,458 @@ body.open {
 
 
 
-.number {
-  font-size: 50px;
-}
+    .number {
+      font-size: 50px;
+    }
 .title {
   color: #0F70BB;
-  font-size: 20px;
+  font-size: 15px;
 }
 .time{
   color: #B5CEDF;
-  font-size: 10px;
+  font-size: 15px;
 }
+.month {
+  text-align: center;
+  padding-top: 70px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.language {
+  padding-left: 20px;
+  padding-top: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.study {
+  padding-left: 20px;
+  padding-top: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+/*円グラフ*/
+.pie {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: auto;
+	margin-left: auto;
+	width: 300px;
+	height: 300px;
+	font-size: 26px;
+	font-weight: 700;
+	background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#0445Ec 0% 42% ,#0F70BD 42% 60% ,#20BDDE 60% 70% ,#3CCEFE 70% 80%,#B29EF3 80% 90%, #6C46EB 90% 94%,#4A17EF 94% 98% ,#3005C0 98% 100%, #d9d9d9 60% 100%);
+	border-radius: 50%;
+  padding-top: 50px;
+}
+
+.pie2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: auto;
+	margin-left: auto;
+	width: 300px;
+	height: 300px;
+	font-size: 26px;
+	font-weight: 700;
+	background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#0445Ec 0% 42% ,#0F70BD 42% 75% ,#20BDDE 75% 100% , #d9d9d9 60% 100%);
+	border-radius: 50%;
+}
+
+.java::before {
+  background-color: #0445Ec;
+  border-radius: 10px;
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  
+}
+.css::before {
+  background-color:#0F70BD;
+  border-radius: 10px;
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  
+}
+.php::before {
+  background-color: #20BD;
+  border-radius: 10px;
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  
+}
+.html::before {
+  background-color: #3CCEFE;
+  border-radius: 10px;
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  
+}
+.la::before {
+  background-color: #B29EF3;
+  border-radius: 10px;
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  
+}
+.sql::before {
+  background-color: #6C46EB;
+  border-radius: 10px;
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  
+}
+.shell::before {
+  background-color: #4A17EF;
+  border-radius: 10px;
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  
+}
+.anther::before {
+  background-color: #3005C0;
+  border-radius: 10px;
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  
+}
+.attention {
+  padding-top: 50px;
+  font-size: 20px;
+  
+}
+.in::before {
+  background-color: #0445Ec;
+  border-radius: 10px;
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  
+}
+.nk::before {
+  background-color: #0F70BD;
+  border-radius: 10px;
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  
+}
+.ps::before {
+  background-color: #20BDDE;
+  border-radius: 10px;
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  
+}
+.no1 {
+  padding-right: 50px;
+  padding-left: 250px;
+  font-size: 20px;
+  color: #FDFDFE;
+  font-weight: 50;
+  padding-bottom: 100px;
+  position: absolute;
+}
+.no2 {
+  font-size: 20px;
+  padding-top: 150px;
+  color: #FDFDFE;
+  font-weight: 50;
+  position: absolute;
+}
+.no3{
+  font-size: 20px;
+  color: #FDFDFE;
+  font-weight: 50;
+  position: absolute;
+  padding-right: 170px;
+  padding-top: 70px;
+}
+.no4 {
+  font-size: 20px;
+  padding-top: 150px;
+  color: #FDFDFE ;
+  position: absolute;
+  padding-left: 200px;
+  padding-bottom: 200px;
+  font-weight: 50;
+}
+.no5 {
+  font-size: 20px;
+  padding-top: 150px;
+  color: #FDFDFE;
+  font-weight: 50;
+  position: absolute;
+  font-weight: 50;
+  padding-right: 110px;
+}
+.no6 {
+  font-size: 20px;
+  padding-top: 150px;
+  color: #FDFDFE;
+  font-weight: 50;
+  position: absolute;
+  font-weight: 50;
+  padding-bottom: 300px;
+  padding-right: 150px;
+}
+/*コンソール内容*/
+.cp_iptxt {
+	position: relative;
+	width: 80%;
+	/* margin: 40px 3%; */
+  padding-left: 56px;
+  padding-top: 10px;
+}
+.cp_iptxt input[type='text'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 30%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #aaaaaa;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+  padding-right: 56px;
+}
+.ef input[type='text']:focus {
+	border: 1px solid #da3c41;
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+}
+.modal__text1 {
+  padding-top: 50px;
+  padding-left: 56px;
+}
+.date {
+  font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 30%;
+	padding: 1em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #aaaaaa;
+	
+  border-radius: 4px;
+}
+.modal__text2 {
+  text-align: right;
+  padding-top: -150px;
+}
+.yoko {
+  display: flex;
+ 
+}
+.tht {
+  padding-top: 50px;
+  padding-left: 600px;
+}
+.cp_iptxt2 {
+	position: absolute;
+	width: 80%;
+	/* margin: 40px 3%; */
+  padding-right: 20px;
+  text-align: right;
+  padding-top: 10px;
+  
+}
+.cp_iptxt2 input[type='text2'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 30%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+  
+}
+.ef input[type='text']:focus {
+	border: 1px solid #da3c41;
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+}
+.out3 {
+  position: left;
+}
+
+/*チャックボックス*/
+.ECM_CheckboxInput1 {
+  padding: 3px 2px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: #F5F5F8;
+  width: 10%;
+  border-radius: 10px;
+  
+  }
+  .ECM_CheckboxInput2 {
+    padding: 3px 2px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #F5F5F8;
+    width: 20%;
+    border-radius: 10px;
+    
+    }
+    .ECM_CheckboxInput3 {
+      padding: 3px 2px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      background-color: #F5F5F8;
+      width: 15%;
+      border-radius: 10px;
+      
+      }
+  .ECM_CheckboxInput-Input {
+  margin: 0;
+  width: 0;
+  opacity: 0;
+  
+  }
+  .ECM_CheckboxInput:hover{
+  background: rgba(0,0,0,.05) !important;
+  }
+  .ECM_CheckboxInput:hover > .ECM_CheckboxInput-DummyInput{
+  transform: scale(1.1);
+  }
+  .ECM_CheckboxInput-Input:focus + .ECM_CheckboxInput-DummyInput{
+  transform: scale(1.1);
+  }
+  .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput {
+  background: rgba(107, 26, 250, 1);
+  }
+  .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 35%;
+  height: 4px;
+  border-radius: 2px;
+  transform: translate(-6px, 5px) rotateZ(-135deg);
+  transform-origin: 2px 2px;
+  background: #FFFFFF;
+  }
+  .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 4px;
+  border-radius: 2px;
+  transform: translate(-6px, 5px) rotateZ(-45deg);
+  transform-origin: 2px 2px;
+  background: #FFFFFF;
+  }
+  .ECM_CheckboxInput-DummyInput {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: solid 2px transparent;
+  background: rgba(0, 0, 0, .15);
+  border-radius: 50%;
+  transition: all .15s linear;
+  }
+  .ECM_CheckboxInput-LabelText {
+  margin-left: 12px;
+  display: block;
+  font-size: 15px;
+  /* font-weight: bold; */
+  }
+
+  .modal__text3 {
+    padding-top: 20px;
+    padding-left: 56px;
+   
+  }
+  .boxA {
+    padding-left: 56px;
+   
+  }
+  .boxB {
+    padding-left: 56px;
+    
+  }
+  .boxC {
+    padding-left: 56px;
+    
+  }
+  .boxD {
+    padding-left: 56px;
+    
+  }
+  .boxE {
+    padding-left: 56px;
+    
+  }
+  .boxF {
+    padding-left: 56px;
+    
+  }
+  .boxG {
+    padding-left: 56px;
+    
+  }
+  .boxH {
+    padding-left: 56px;
+    
+  }
+  .boxI {
+    padding-left: 56px;
+    
+  }
+  .boxJ {
+    padding-left: 56px;
+    
+  }
+  .boxK {
+    padding-left: 56px;
+    
+  }
+
+  .modal__text4 {
+    padding-left: 710px;
+    height: 50px;
+    position: absolute;
+    padding-bottom: 100px;
+  }
+  .box {
+    
+  }
+  .modal__text5 {
+    padding-left: 56px;
+    
+  }
